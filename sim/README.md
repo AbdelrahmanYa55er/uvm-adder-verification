@@ -12,33 +12,6 @@ This directory contains scripts and helpers for running the UVM testbench.
 
 ## Usage
 
-### Makefile
-
-All commands should be run from this directory (`sim/`).
-
-```bash
-# Default: QuestaSim
-make all
-
-# Override simulator
-make SIMULATOR=xcelium all
-make SIMULATOR=vcs all
-
-# Override test name, seed, verbosity
-make TEST=adder_test SEED=42 UVM_FLAGS="+UVM_VERBOSITY=UVM_HIGH" all
-
-# Clean up
-make clean
-```
-
-### Supported Variables
-
-| Variable      | Default         | Description                    |
-| :------------ | :-------------- | :----------------------------- |
-| `SIMULATOR`   | `questa`        | `questa`, `xcelium`, or `vcs`  |
-| `TEST`        | `adder_test`    | UVM test class name            |
-| `SEED`        | `random`        | Random seed for constrained random |
-| `UVM_FLAGS`   | `+UVM_VERBOSITY=UVM_LOW` | Additional UVM plusargs |
 
 ### EDA Playground
 
