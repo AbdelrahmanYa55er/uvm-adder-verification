@@ -6,7 +6,6 @@ This directory contains scripts and helpers for running the UVM testbench.
 
 | File                    | Purpose                                                           |
 | :---------------------- | :---------------------------------------------------------------- |
-| `Makefile`              | Multi-simulator build & run (QuestaSim, Xcelium, VCS)             |
 | `run_edaplayground.sv`  | Flat-file include reference for EDA Playground                    |
 | `passing_run.log`       | Log proof of clean simulation run (0 UVM_ERROR)                   |
 | `injected_bug_run.log`  | Log proof of scoreboard detecting an injected DUT bug             |
