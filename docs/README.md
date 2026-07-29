@@ -6,14 +6,14 @@ This project implements a standard UVM testbench following the layered architect
 
 ```
           ┌─────────────┐
-          │    TEST      │    ← Scenario control (objection, sequence launch)
-          │ ┌─────────┐  │
-          │ │   ENV    │  │    ← Component composition (agent + scoreboard)
-          │ │ ┌─────┐  │  │
-          │ │ │AGENT│  │  │    ← Stimulus + observation bundle
-          │ │ └─────┘  │  │
-          │ └─────────┘  │
-          └──────┬───────┘
+          │    TEST     │    ← Scenario control (objection, sequence launch)
+          │ ┌─────────┐ │
+          │ │   ENV   │ │    ← Component composition (agent + scoreboard)
+          │ │ ┌─────┐ │ │
+          │ │ │AGENT│ │ │    ← Stimulus + observation bundle
+          │ │ └─────┘ │ │
+          │ └─────────┘ │
+          └──────┬──────┘
                  │ virtual interface
           ┌──────┴───────┐
           │     DUT      │    ← Design Under Test
