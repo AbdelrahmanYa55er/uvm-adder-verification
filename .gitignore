@@ -1,0 +1,40 @@
+# ==============================================================================
+#  Simulation artifacts
+# ==============================================================================
+*.vcd
+*.wlf
+*.log
+transcript
+
+# QuestaSim / ModelSim
+work/
+vsim.wlf
+
+# Cadence Xcelium
+xcelium.d/
+INCA_libs/
+xrun.log
+xrun.history
+
+# Synopsys VCS
+csrc/
+simv
+simv.*
+simv.daidir/
+vc_hdrs.h
+ucli.key
+DVEfiles/
+
+# Simulation output
+sim/out/
+
+# ==============================================================================
+#  OS / editor
+# ==============================================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
