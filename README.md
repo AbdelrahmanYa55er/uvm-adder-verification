@@ -114,7 +114,6 @@ flowchart LR
 │   └── README.md
 │
 ├── sim/                        # Simulation scripts & logs
-│   ├── Makefile                #   Multi-simulator Makefile
 │   ├── run_edaplayground.sv    #   EDA Playground flat-file reference
 │   ├── passing_run.log         #   Passing test simulation log
 │   ├── injected_bug_run.log    #   Failing test simulation log
