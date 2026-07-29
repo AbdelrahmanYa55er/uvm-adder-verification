@@ -1,0 +1,75 @@
+[2026-07-29 09:08:45 UTC] xrun -Q -unbuffered '-timescale' '1ns/1ns' '-sysv' '-access' '+rw' -uvmnocdnsextra -uvmhome $UVM_HOME $UVM_HOME/src/uvm_macros.svh design.sv testbench.sv  
+TOOL:	xrun	25.03-s001: Started on Jul 29, 2026 at 05:08:45 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		uvm_pkg
+		adder_pkg
+		tb_top
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> source /xcelium25.03/tools//methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (25.03-s001)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test adder_test...
+UVM_INFO adder_sequence.svh(19) @ 0: uvm_test_top.env_o.agt.seqr@@bseq [adder_sequence] Generating 10 transactions
+UVM_ERROR adder_scoreboard.svh(55) @ 10000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=81, ip2=19, out=101 | expected=100
+UVM_ERROR adder_scoreboard.svh(55) @ 18000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=96, ip2=2, out=99 | expected=98
+UVM_ERROR adder_scoreboard.svh(55) @ 26000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=89, ip2=83, out=173 | expected=172
+UVM_ERROR adder_scoreboard.svh(55) @ 34000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=97, ip2=65, out=163 | expected=162
+UVM_ERROR adder_scoreboard.svh(55) @ 42000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=22, ip2=40, out=63 | expected=62
+UVM_ERROR adder_scoreboard.svh(55) @ 50000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=8, ip2=26, out=35 | expected=34
+UVM_ERROR adder_scoreboard.svh(55) @ 58000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=8, ip2=54, out=63 | expected=62
+UVM_ERROR adder_scoreboard.svh(55) @ 66000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=70, ip2=55, out=126 | expected=125
+UVM_ERROR adder_scoreboard.svh(55) @ 74000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=48, ip2=88, out=137 | expected=136
+UVM_ERROR adder_scoreboard.svh(55) @ 82000: uvm_test_top.env_o.sb [adder_scoreboard] FAIL: ip1=72, ip2=32, out=105 | expected=104
+UVM_INFO adder_test.svh(42) @ 84000: uvm_test_top [adder_test] End of testcase
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 85000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO adder_scoreboard.svh(70) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] --- SCOREBOARD SUMMARY ---
+UVM_INFO adder_scoreboard.svh(81) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] CHECKED: 10 | PASSED: 0 | FAILED: 10
+UVM_INFO adder_scoreboard.svh(87) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] --------------------------
+UVM_ERROR adder_scoreboard.svh(107) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] 10 transaction(s) failed
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(851) @ 85000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    8
+UVM_WARNING :    0
+UVM_ERROR :   11
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[adder_scoreboard]    14
+[adder_sequence]     1
+[adder_test]     1
+
+Simulation complete via $finish(1) at time 85 NS + 58
+/xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh:543     $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Jul 29, 2026 at 05:08:55 EDT  (total: 00:00:10)
+Done
+
+*** TEST FAILED (10 errors detected) ***

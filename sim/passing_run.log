@@ -1,0 +1,68 @@
+TOOL:	xrun	25.03-s001: Started on Jul 29, 2026 at 04:11:25 EDT
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+	Top level design units:
+		uvm_pkg
+		adder_pkg
+		tb_top
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> source /xcelium25.03/tools//methodology/UVM/CDNS-1.2/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_root.svh(412) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+CDNS-UVM-1.2 (25.03-s001)
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test adder_test...
+UVM_INFO adder_sequence.svh(19) @ 0: uvm_test_top.env_o.agt.seqr@@bseq [adder_sequence] Generating 10 transactions
+UVM_INFO adder_scoreboard.svh(43) @ 10000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=81, ip2=19, expected=100, actual=100
+UVM_INFO adder_scoreboard.svh(43) @ 18000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=96, ip2=2, expected=98, actual=98
+UVM_INFO adder_scoreboard.svh(43) @ 26000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=89, ip2=83, expected=172, actual=172
+UVM_INFO adder_scoreboard.svh(43) @ 34000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=97, ip2=65, expected=162, actual=162
+UVM_INFO adder_scoreboard.svh(43) @ 42000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=22, ip2=40, expected=62, actual=62
+UVM_INFO adder_scoreboard.svh(43) @ 50000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=8, ip2=26, expected=34, actual=34
+UVM_INFO adder_scoreboard.svh(43) @ 58000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=8, ip2=54, expected=62, actual=62
+UVM_INFO adder_scoreboard.svh(43) @ 66000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=70, ip2=55, expected=125, actual=125
+UVM_INFO adder_scoreboard.svh(43) @ 74000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=48, ip2=88, expected=136, actual=136
+UVM_INFO adder_scoreboard.svh(43) @ 82000: uvm_test_top.env_o.sb [adder_scoreboard] PASS: ip1=72, ip2=32, expected=104, actual=104
+UVM_INFO adder_test.svh(42) @ 84000: uvm_test_top [adder_test] End of testcase
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_objection.svh(1271) @ 85000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO adder_scoreboard.svh(70) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] --- SCOREBOARD SUMMARY ---
+UVM_INFO adder_scoreboard.svh(81) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] CHECKED: 10 | PASSED: 10 | FAILED: 0
+UVM_INFO adder_scoreboard.svh(87) @ 85000: uvm_test_top.env_o.sb [adder_scoreboard] --------------------------
+UVM_INFO /xcelium25.03/tools/methodology/UVM/CDNS-1.2/sv/src/base/uvm_report_server.svh(851) @ 85000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   18
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[adder_scoreboard]    13
+[adder_sequence]     1
+[adder_test]     1
+
+Simulation complete via $finish(1) at time 85 NS + 58
+*** TEST PASSED ***
